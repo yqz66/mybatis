@@ -23,7 +23,7 @@
             <artifactId>mysql-connector-java</artifactId>
             <version>5.1.41</version>
         </dependency>
-
+        <!--添加jar包-->
     </dependencies>
     <build>
         <resources>
