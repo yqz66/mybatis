@@ -19,6 +19,7 @@ public class TestGrade extends TestBase{
     @Before
     public void init(){
         gradeMapper = this.getMapper(GradeMapper.class);
+        System.out.println("");
     }
 
     @Test
