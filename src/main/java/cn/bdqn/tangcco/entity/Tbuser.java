@@ -1,6 +1,7 @@
 package cn.bdqn.tangcco.entity;
 
 
+import java.sql.Timestamp;
 import java.util.Date;
 
 /**
@@ -12,11 +13,11 @@ public class Tbuser {
     private String password;
     private String userroles;
     private String nickname;
-    private Date registrationtime;
+    private Timestamp registrationtime;
     private Date dateofbirth;
-    private Date systemtime;
+    private Timestamp systemtime;
 
-    public Tbuser(int userid, String username, String password, String userroles, String nickname, Date registrationtime, Date dateofbirth, Date systemtime) {
+    public Tbuser(int userid, String username, String password, String userroles, String nickname, Timestamp registrationtime, Date dateofbirth, Timestamp systemtime) {
         this.userid = userid;
         this.username = username;
         this.password = password;
@@ -89,11 +90,11 @@ public class Tbuser {
         this.nickname = nickname;
     }
 
-    public Date getRegistrationtime() {
+    public Timestamp getRegistrationtime() {
         return registrationtime;
     }
 
-    public void setRegistrationtime(Date registrationtime) {
+    public void setRegistrationtime(Timestamp registrationtime) {
         this.registrationtime = registrationtime;
     }
 
@@ -105,11 +106,11 @@ public class Tbuser {
         this.dateofbirth = dateofbirth;
     }
 
-    public Date getSystemtime() {
+    public Timestamp getSystemtime() {
         return systemtime;
     }
 
-    public void setSystemtime(Date systemtime) {
+    public void setSystemtime(Timestamp systemtime) {
         this.systemtime = systemtime;
     }
 }
